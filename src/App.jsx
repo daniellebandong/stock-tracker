@@ -1,11 +1,17 @@
 import React from "react";
-import  {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import  {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <div>
-        <p>this is the opening page of the stock tracker application</p>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/register" element={<Register/>}/>
+      </Routes>
   );
 }
 
