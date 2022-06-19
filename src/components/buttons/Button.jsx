@@ -3,10 +3,10 @@ import React from 'react';
 const Button = (props) => {
     return (
         <div>
-            <div>
+            <button>
                 {props.label}
                 {props.children}
-            </div>
+            </button>
         </div>
     );
 };

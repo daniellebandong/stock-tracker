@@ -1,5 +1,6 @@
 import React from 'react';
 //import {Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import FormInput from './../components/forms/FormInput';
 import Button from './../components/buttons/Button'
@@ -12,13 +13,14 @@ import Button from './../components/buttons/Button'
 
 const Register = (props) => {
     return (
-        <header>
-        <h2>Unlimited Free Trial Sign Up</h2>
+    <header>
+        <h2>Sign Up to start investing today!</h2>
         <p>no credit card required</p>
         <FormInput label="name on the account: " type="text" />
         <FormInput label="valid email address: " type="email" />
         <FormInput label="password(min 6 characters): " type="text" />
-        <Button uiStyle="signup" label="Create a free account" />
+        <Button label="Register"/>
+        <p>Already have an account? Click <Link className='homeLinks' to='/login'>here</Link> to sign in!</p>
     </header>
     );
 };
