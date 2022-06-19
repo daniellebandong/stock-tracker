@@ -15,12 +15,13 @@ const Register = (props) => {
     return (
     <header>
         <h2>Sign Up to start investing today!</h2>
-        <p>no credit card required</p>
-        <FormInput label="name on the account: " type="text" />
-        <FormInput label="valid email address: " type="email" />
-        <FormInput label="password(min 6 characters): " type="text" />
-        <Button label="Register"/>
-        <p>Already have an account? Click <Link className='homeLinks' to='/login'>here</Link> to sign in!</p>
+        <form action="">
+            <FormInput label="username: " type="text" />
+            <FormInput label="email address: " type="email" />
+            <FormInput label="password (min 6 characters): " type="text" />
+            <Button label="Register"/>
+            <p>Already have an account? Click <Link className='homeLinks' to='/login'>here</Link> to sign in!</p>
+        </form>
     </header>
     );
 };

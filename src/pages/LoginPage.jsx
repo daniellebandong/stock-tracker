@@ -13,13 +13,15 @@ import './../styles/styles.scss'
 const LoginPage = () => {
     return (
         <header>
-            <h1>Welcome to the Stock Tracker Application</h1>
-            <p>Please Login</p>
+            <h1>Welcome to the Stock Tracker Application</h1>         
             {/* still will need to add onChange methods to the FormInputs */}
-            <FormInput label="Email Address: " type="text"/>
-            <FormInput label="Password: " type="text"/>
-            <Button  label="login"/>
-            <p>Don't have an account? Click <Link className='homeLinks' to='/register'>here</Link> to sign up!</p>
+            <form action="">
+                <p>Please Login</p>
+                <FormInput label="Email Address: " type="text"/>
+                <FormInput label="Password: " type="text"/>
+                <Button  label="login"/>
+                <p>Don't have an account? Click <Link className='homeLinks' to='/register'>here</Link> to sign up!</p>
+            </form>
         </header>
     );
 };
