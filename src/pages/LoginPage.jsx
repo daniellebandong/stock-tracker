@@ -24,7 +24,7 @@ const LoginPage = (props) => {
             {/* still will need to add onChange methods to the FormInputs */}
             <form action="">
                 <p>Please Login</p>
-                <FormInput label="Email Address: " type="text" onChange={(e)=> setEmail(e.target.value.trim())}/>
+                <FormInput label={props.id} type="text" onChange={(e)=> setEmail(e.target.value.trim())}/>
                 <FormInput label="Password: " type="text" onChange={(e)=> setPassword(e.target.value.trim())}/>
                 <Button  label="login"/>
                 <p>Don't have an account? Click <Link className='homeLinks' to='/register'>here</Link> to sign up!</p>
