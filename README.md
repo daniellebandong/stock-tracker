@@ -10,5 +10,5 @@ The purpose of this application is for a user to sign up for an account which wi
 
 React.js
 (Still need database)
-SCSS
+Will be using tailwindcss for styles
 bcrypt(password hashing for security)
