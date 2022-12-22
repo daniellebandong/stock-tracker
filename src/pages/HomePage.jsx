@@ -6,8 +6,8 @@ const HomePage = (props) => {
         <div >
             <h1>Stock's R Us</h1>
             <p>focus on people and we'll focus on the paperwork</p>
-            <Link className="homeLinks" to="/login">Login</Link>
-            <Link className="homeLinks" to="/register">Register</Link>
+            <Link className="'font-medium text-blue-600 dark:text-blue-500 hover:underline'" to="/login">Login</Link>
+            <Link className="'font-medium text-blue-600 dark:text-blue-500 hover:underline'" to="/register">Register</Link>
         </div>
     );
 };

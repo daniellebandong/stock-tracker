@@ -1,7 +1,7 @@
-import {React, useState} from 'react';
-import {Link} from 'react-router-dom';
+import { React, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import FormInput from './../components/forms/FormInput'
+import LoginFormType from './../components/forms/LoginFormType'
 import Button from './../components/buttons/Button';
 
 // This is the login page for the stock tracker app, it will verify with the database whether the user has a registered account in our database and if they have entered their username or password correctly. If it does not work each error message will show what needs to be changed but when users log in correctly they will be redirected to the dashboard
@@ -12,24 +12,18 @@ import Button from './../components/buttons/Button';
 
 const LoginPage = (props) => {
     //part of the verification process
-    const[email, setEmail] = useState('')
+    const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     //const [isValid, setIsValid] = useState(false)
 
     //handle click method
-    
+
     return (
-        <header>
-            <h1>Welcome to the Stock Tracker Application</h1>         
+        <div className='mx-2 justify-content: center'>
+            <h1 className='text-xl font-bold'>Welcome to the Stock Tracker Application</h1>
             {/* still will need to add onChange methods to the FormInputs */}
-            <form action="">
-                <p>Please Login</p>
-                <FormInput label={props.id} type="text" onChange={(e)=> setEmail(e.target.value.trim())}/>
-                <FormInput label="Password: " type="text" onChange={(e)=> setPassword(e.target.value.trim())}/>
-                <Button  label="login"/>
-                <p>Don't have an account? Click <Link className='homeLinks' to='/register'>here</Link> to sign up!</p>
-            </form>
-        </header>
+            <p>Don't have an account? Click <Link className='font-medium text-blue-600 dark:text-blue-500 hover:underline' to='/register'>here</Link> to sign up!</p>
+        </div>
     );
 };
 
