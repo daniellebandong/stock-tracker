@@ -14,6 +14,7 @@ const Register = (props) => {
     return (
         <div className='mx-2'>
             <h2>Sign Up to start investing today!</h2>
+            
             <p>Already have an account? Click <Link className='font-medium text-blue-600 dark:text-blue-500 hover:underline' to='/login'>here</Link> to sign in!</p>
         </div>
     );

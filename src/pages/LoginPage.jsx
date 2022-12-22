@@ -21,7 +21,7 @@ const LoginPage = (props) => {
     return (
         <div className='mx-2 justify-content: center'>
             <h1 className='text-xl font-bold'>Welcome to the Stock Tracker Application</h1>
-            {/* still will need to add onChange methods to the FormInputs */}
+            <LoginFormType/>
             <p>Don't have an account? Click <Link className='font-medium text-blue-600 dark:text-blue-500 hover:underline' to='/register'>here</Link> to sign up!</p>
         </div>
     );
