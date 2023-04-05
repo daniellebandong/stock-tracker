@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import LoginFormType from './../components/forms/LoginFormType';
+import RegisterFormType from './../components/forms/RegisterFormType';
 import Button from './../components/buttons/Button'
 
 // Todos: use firebase to store log in data?(maybe)
@@ -14,7 +14,7 @@ const Register = (props) => {
     return (
         <div className='mx-2'>
             <h2>Sign Up to start investing today!</h2>
-            
+            <RegisterFormType/>
             <p>Already have an account? Click <Link className='font-medium text-blue-600 dark:text-blue-500 hover:underline' to='/login'>here</Link> to sign in!</p>
         </div>
     );
